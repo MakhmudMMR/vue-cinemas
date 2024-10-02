@@ -1,0 +1,87 @@
+@media (max-width:1140px) {
+    .main-tatle{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:992px) {
+    .trailer{
+        background: linear-gradient(90deg, #def7ff76 0%, #f4fcff75 45.31%, rgba(255, 255, 255, 0) 100%);
+        text-align: center;
+      }  
+      .trailer p{
+        margin: 30px auto;
+        font-size: 22px;
+      }
+    }
+@media (max-width:768px) {
+    .burger{
+        display: block;
+        visibility: visible;
+        
+    }
+    
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: #0000009e;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-200%);
+        transition: 900ms;
+        background: linear-gradient(90deg, rgba(108,0,47,0.9164040616246498) 0%, rgba(0,117,255,1) 100%);
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0%);
+    }
+    .header__nav-list a{
+        font-size: 18px;
+    }
+    .series__grid{
+        grid-template-rows: repeat(4, 202px);
+    }
+    .series__grid-card:first-of-type {
+        grid-column: span 12;
+    }
+    .series__grid-card{
+        grid-column: span 6;
+    }
+    @media (max-width:476px) {
+        .trailer img{
+            width: 100%;
+        }
+        .trailer p{
+            line-height: 22px;
+            font-size: 18px; 
+        }
+        .series__grid-card{
+            grid-column: span 12;
+        }
+        .series__grid{
+            grid-template-rows: repeat(6, 202px);
+        }
+        .series__main p{
+            line-height: 18px;
+        }
+        .series__main h3{
+            font-size: 26px;
+        }
+        .header__content h1{
+            font-size: 44px;
+            font-family: Montserrat;
+        }
+        .btn{
+            display: inline-block;
+            padding: 8px 23px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        .header__content{
+            background:  url(../images/kunfu.webp) center / cover ;
+            background-color: rgba(7, 15, 25, 0.75);
+            background-blend-mode: multiply;
+        }
+    }
+}
